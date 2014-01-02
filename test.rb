@@ -1,4 +1,4 @@
-require 'db_scan'
+require './db_scan.rb'
 class Test
     include DbScan
   def self.test
