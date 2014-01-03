@@ -42,7 +42,7 @@ module DbScan
 						cluster.push(add_connected(neighbours,current_cluster))
 						clusters[current_cluster] = cluster.flatten
 					else
-						# this point is not a cluster
+						# this point is a noise. any cluster do not include it
 						# because this cluster size is below min_pts
 						clusters[-1].push(point)
 					end
