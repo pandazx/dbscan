@@ -16,7 +16,7 @@ module DbScan
 			_dbscan
 		end
 
-		# convert date to Point object array
+		# convert @points to Point object array
 		def init_point
 			return @points if (!@points.is_a? Array) or (@points.size<2)
 			@new_points = []
